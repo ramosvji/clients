@@ -1,11 +1,19 @@
 package com.example.clients.dao.entities;
 
+import java.io.Serializable;
 import java.util.List;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.example.clients.business.dtos.NameDtoInt;
 
-public class Client {
+@Document(collection = "client")
+public class Client implements Serializable {
 	
+	private static final long serialVersionUID = 1L;
+	
+	@Id
 	private String id;
 	private NameDtoInt name;
 	private List<CatalogCodeDesc> identifications;

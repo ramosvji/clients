@@ -1,6 +1,10 @@
 package com.example.clients.dao.entities;
 
-public class CatalogCodeDesc {
+import java.io.Serializable;
+
+public class CatalogCodeDesc implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
 	
 	private String code;
 	private String description;

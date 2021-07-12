@@ -1,6 +1,10 @@
 package com.example.clients.dao.entities;
 
-public class Credential {
+import java.io.Serializable;
+
+public class Credential implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 	
 	private String username;
 	private String password;

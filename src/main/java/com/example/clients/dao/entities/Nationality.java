@@ -1,8 +1,11 @@
 package com.example.clients.dao.entities;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Nationality {
+public class Nationality implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
 	
 	private CatalogCodeDesc bornCountry;
 	private List<CatalogCodeDesc> nationalities;
