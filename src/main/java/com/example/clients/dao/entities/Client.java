@@ -6,8 +6,6 @@ import java.util.List;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import com.example.clients.business.dtos.NameDtoInt;
-
 @Document(collection = "client")
 public class Client implements Serializable {
 	
@@ -15,7 +13,7 @@ public class Client implements Serializable {
 	
 	@Id
 	private String id;
-	private NameDtoInt name;
+	private Name name;
 	private List<CatalogCodeDesc> identifications;
 	private List<Address> addresses;
 	private CatalogCodeDesc genre;
@@ -30,11 +28,11 @@ public class Client implements Serializable {
 		this.id = id;
 	}
 	
-	public NameDtoInt getName() {
+	public Name getName() {
 		return name;
 	}
 	
-	public void setName(NameDtoInt name) {
+	public void setName(Name name) {
 		this.name = name;
 	}
 	

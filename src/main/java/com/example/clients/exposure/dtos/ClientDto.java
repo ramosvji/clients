@@ -18,11 +18,10 @@ public class ClientDto implements Serializable {
 	public String getId() {
 		return id;
 	}
-
 	public void setId(String id) {
 		this.id = id;
 	}
-
+	
 	public NameDto getName() {
 		return name;
 	}
@@ -58,11 +57,11 @@ public class ClientDto implements Serializable {
 	public NationalityDto getNationality() {
 		return nationality;
 	}
-
+	
 	public void setNationality(NationalityDto nationality) {
 		this.nationality = nationality;
 	}
-
+	
 	public Credential getCredential() {
 		return credential;
 	}
